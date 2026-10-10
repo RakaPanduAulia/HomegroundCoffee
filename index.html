@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Homeground Coffee — Artisanal Home Brewer & Specialty Coffee Roasters</title>
+  <meta name="title" content="Homeground Coffee — Artisanal Home Brewer & Specialty Coffee Roasters">
+  <meta name="description" content="Homeground Coffee adalah roastery & brewer rumahan yang menghadirkan kopi spesialti kurasi nusantara dengan presisi batch kecil, cold brew artisan, dan panduan seduh interaktif.">
+  <meta name="keywords" content="homeground coffee, coffee brewer rumahan, specialty coffee indonesia, manual brew v60, cold brew botol, biji kopi gayo, roastery jakarta">
+  <meta name="author" content="Homeground Coffee">
+  <meta name="theme-color" content="#0d0a08">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://homegroundcoffee.id/">
+  <meta property="og:title" content="Homeground Coffee — Artisanal Home Brewer & Specialty Coffee Roasters">
+  <meta property="og:description" content="Seni kopi spesialti langsung dari seduhan rumahan. Biji kopi single origin sangrai segar batch kecil & cold brew artisan terkalibrasi.">
+  <meta property="og:image" content="assets/images/hero.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e8924b'><path d='M2 19h18v2H2zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3z'/></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ==============================================
+       Header & Navigation Bar
+       ============================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar">
+      <!-- Logo Brand -->
+      <a href="#" class="logo" id="brandLogo">
+        <div class="logo-badge" aria-hidden="true">
+          <!-- Coffee Cup SVG Icon -->
+          <svg viewBox="0 0 24 24">
+            <path d="M2 19h18v2H2zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3z"/>
+          </svg>
+        </div>
+        <span>Homeground<span class="text-accent">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+          <li><a href="#menu" class="nav-link">Menu & Beans</a></li>
+          <li><a href="#kalkulator" class="nav-link">Kalkulator Seduh</a></li>
+          <li><a href="#proses" class="nav-link">Filosofi</a></li>
+          <li><a href="#testimoni" class="nav-link">Ulasan</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme & CTA) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Ganti Tema Warna">
+          <!-- Sun Icon (for dark mode) -->
+          <svg id="sunIcon" viewBox="0 0 24 24">
+            <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/>
+          </svg>
+          <!-- Moon Icon (for light mode) -->
+          <svg id="moonIcon" viewBox="0 0 24 24" style="display: none;">
+            <path d="M12.3 2a10 10 0 0 0-.19 20 10.04 10.04 0 0 0 9.89-8.48c.15-.81-.66-1.45-1.42-1.19A7.01 7.01 0 0 1 12 5.03c0-2.31 1.13-4.36 2.87-5.63.66-.48.43-1.52-.37-1.4z"/>
+          </svg>
+        </button>
+
+        <!-- Direct WhatsApp Order Header Button -->
+        <button class="btn btn-whatsapp" data-open-order id="headerOrderBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.12c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.62-.92-3.19-1.32-5.23-4.57-5.39-4.78-.16-.21-1.28-1.7-1.28-3.25s.8-2.31 1.09-2.63c.28-.32.61-.4.81-.4.2 0 .4.01.58.02.19.01.44-.07.69.53.25.6.85 2.08.93 2.23.08.16.14.34.03.55-.11.21-.17.34-.33.53-.16.19-.34.42-.48.56-.16.16-.33.34-.14.66.19.32.84 1.38 1.8 2.23 1.23 1.1 2.27 1.44 2.59 1.6.32.16.51.13.7-.08.19-.21.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.38.08.13.08.77-.16 1.45z"/>
+          </svg>
+          <span>Pesan via WA</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-btn" id="mobileMenuOpen" aria-label="Buka Menu Navigasi">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-header">
+      <div class="logo">
+        <div class="logo-badge">
+          <svg viewBox="0 0 24 24"><path d="M2 19h18v2H2zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3z"/></svg>
+        </div>
+        <span>Homeground<span class="text-accent">.</span></span>
+      </div>
+      <button class="modal-close-btn" id="mobileMenuClose" aria-label="Tutup Menu Navigasi">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#tentang" class="mobile-nav-link">Tentang Kami</a></li>
+      <li><a href="#menu" class="mobile-nav-link">Menu & Beans</a></li>
+      <li><a href="#kalkulator" class="mobile-nav-link">Kalkulator Seduh</a></li>
+      <li><a href="#proses" class="mobile-nav-link">Filosofi & Proses</a></li>
+      <li><a href="#testimoni" class="mobile-nav-link">Ulasan Pelanggan</a></li>
+      <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: 2rem;">
+      <button class="btn btn-whatsapp" style="width: 100%;" data-open-order>
+        <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.12c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.62-.92-3.19-1.32-5.23-4.57-5.39-4.78-.16-.21-1.28-1.7-1.28-3.25s.8-2.31 1.09-2.63c.28-.32.61-.4.81-.4.2 0 .4.01.58.02.19.01.44-.07.69.53.25.6.85 2.08.93 2.23.08.16.14.34.03.55-.11.21-.17.34-.33.53-.16.19-.34.42-.48.56-.16.16-.33.34-.14.66.19.32.84 1.38 1.8 2.23 1.23 1.1 2.27 1.44 2.59 1.6.32.16.51.13.7-.08.19-.21.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.38.08.13.08.77-.16 1.45z"/></svg>
+        <span>Pesan via WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==============================================
+       Hero Section
+       ============================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <!-- Left Content -->
+      <div class="hero-text-content">
+        <div class="hero-badge-wrap">
+          <span class="section-tag">Home Roastery & Micro-Brewer</span>
+          <div class="live-indicator">
+            <span class="live-dot"></span>
+            <span>Batch Seduh Hari Ini Tersedia</span>
+          </div>
+        </div>
+
+        <h1 class="heading-xl hero-title">
+          Menghadirkan Seni Kopi Spesialti <span class="text-gradient">Langsung dari Seduhan Rumahan.</span>
+        </h1>
+
+        <p class="hero-description">
+          Dari meja dapur seorang home brewer ke cangkir harianmu. Kami memanggang dan menyeduh biji kopi pilihan petani nusantara dalam batch mikro untuk menjaga kompleksitas rasa, kesegaran puncak, dan ketulusan dalam setiap tetes.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">
+            <span>Eksplorasi Biji Kopi & Menu</span>
+            <svg class="btn-icon" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+          <a href="#kalkulator" class="btn btn-outline">
+            <svg class="btn-icon" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H6v-2h6v2zm6 0h-4v-2h4v2zm0-4H6v-2h12v2zm0-4H6V7h12v2z"/></svg>
+            <span>Kalkulator Seduh</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-num">100%</span>
+            <span class="metric-label">Single Origin Terkurasi</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">&lt; 14 Hari</span>
+            <span class="metric-label">Jaminan Fresh Roast</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-num">4.9 ★</span>
+            <span class="metric-label">Rating Komunitas Seduh</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Media Showcase -->
+      <div class="hero-media-wrapper">
+        <div class="hero-media-frame">
+          <img src="assets/images/hero.jpg" alt="Homeground Coffee Pour Over Brewing Bar" class="hero-img" width="800" height="600" loading="eager">
+        </div>
+
+        <!-- Floating Glass Card Top -->
+        <div class="floating-glass-card badge-top">
+          <div class="card-icon-circle">
+            <!-- V60 Dripper Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M2 19h18v2H2zM3 4l4 10h10l4-10H3zm13 8H8l-2.4-6h12.8L16 12z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="card-text-title">V60 Hand Pour Bar</div>
+            <div class="card-text-sub">Rasio presisi TDS terkalibrasi</div>
+          </div>
+        </div>
+
+        <!-- Floating Glass Card Bottom -->
+        <div class="floating-glass-card badge-bottom">
+          <div class="card-icon-circle">
+            <!-- Flame / Fresh Roast Icon -->
+            <svg viewBox="0 0 24 24">
+              <path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="card-text-title">Micro-Batch Roasting</div>
+            <div class="card-text-sub">Maksimal 2kg per pemanggangan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       About & Story Section
+       ============================================== -->
+  <section class="story-section" id="tentang">
+    <div class="container story-grid">
+      <!-- Media / Image Stack -->
+      <div class="story-image-stack">
+        <img src="assets/images/beans.jpg" alt="Homeground Coffee Beans Craft Packaging" class="story-img-main" width="600" height="450" loading="lazy">
+        <div class="story-badge-quote">
+          <p>"Kopi terbaik tidak harus lahir dari mesin industri raksasa, melainkan dari ketelitian dan rasa cinta di meja seduh rumahan."</p>
+          <span>— Founder & Head Brewer</span>
+        </div>
+      </div>
+
+      <!-- Text Content -->
+      <div class="story-text-content">
+        <span class="section-tag">Cerita di Balik Homeground</span>
+        <h2 class="heading-lg">Bukan Sekadar Kedai, Ini Ruang Seduh Pribadi Kami.</h2>
+        <p class="story-lead">
+          Homeground berawal dari sudut dapur kecil di mana rasa penasaran tentang variabel seduhan berubah menjadi dedikasi untuk menemukan secangkir kopi yang sempurna.
+        </p>
+        <p class="story-paragraph">
+          Sebagai brewer rumahan, kami tidak terikat oleh target produksi massal. Kami memiliki kebebasan untuk bereksperimen dengan rasio, suhu, dan profil sangrai hingga menemukan titik manis dari tiap origin biji kopi Indonesia.
+        </p>
+        <p class="story-paragraph">
+          Setiap kantong biji kopi dan botol cold brew yang kamu terima disiapkan langsung oleh tangan kami, dipanggang dalam batch kecil, dan dikemas tepat setelah masa resting ideal.
+        </p>
+
+        <!-- Pillars -->
+        <div class="story-pillars-grid">
+          <div class="pillar-card">
+            <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16h2v2h-2zm0-6h2v4h-2z"/></svg>
+            <h4>Batch Kecil Presisi</h4>
+            <p>Disangrai hanya 1–2 kg per sesi untuk menjaga konsistensi profil rasa dan aroma.</p>
+          </div>
+          <div class="pillar-card">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <h4>Kemitraan Petani Lokal</h4>
+            <p>Biji kopi diambil langsung dari perkebunan di Gayo, Kerinci, Flores Bajawa, dan Kintamani.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       Featured Menu & Products Section
+       ============================================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Koleksi Spesialti</span>
+        <h2 class="heading-lg">Koleksi Biji Pilihan & Seduhan Segar</h2>
+        <p class="section-subtitle">
+          Dari biji sangrai segar siap seduh hingga cold brew botol yang diseduh lambat selama 18 jam dengan rasa bulat dan asam lembut.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Semua Menu</button>
+        <button class="filter-btn" data-filter="beans">Single Origin Beans</button>
+        <button class="filter-btn" data-filter="coldbrew">Bottled Cold Brew</button>
+        <button class="filter-btn" data-filter="blends">Signature House Blend</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1: Gayo Wine Anaerobic -->
+        <article class="product-card" data-category="beans">
+          <div class="product-thumb-wrap">
+            <img src="assets/images/beans.jpg" alt="Aceh Gayo Wine Anaerobic Natural Beans" class="product-thumb" loading="lazy">
+            <span class="product-badge">Single Origin</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Specialty Beans • 200g</span>
+            <h3 class="product-title">Gayo Wine Anaerobic</h3>
+            <p class="product-desc">Fermentasi anaerobik 48 jam yang menghasilkan profil winey manis, body tebal, dan aroma buah matang eksotis.</p>
+            <div class="tasting-notes-tags">
+              <span class="note-tag">Red Wine</span>
+              <span class="note-tag">Dried Plum</span>
+              <span class="note-tag">Dark Honey</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-label">Harga</span>
+                <span class="price-value">Rp 115.000</span>
+              </div>
+              <button class="btn btn-whatsapp" data-open-order data-product="Gayo Wine Anaerobic 200g">
+                <span>Pesan</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2: Signature Amber Cold Brew -->
+        <article class="product-card" data-category="coldbrew">
+          <div class="product-thumb-wrap">
+            <img src="assets/images/cold-brew.jpg" alt="Homeground Amber Bottled Cold Brew 250ml" class="product-thumb" loading="lazy">
+            <span class="product-badge">Best Seller</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Bottled Cold Brew • 250ml</span>
+            <h3 class="product-title">Amber Cold Brew Black</h3>
+            <p class="product-desc">Diseduh perlahan 18 jam dengan air terfiltrasi mineral seimbang. Tekstur lembut tanpa pahit getir yang berlebihan.</p>
+            <div class="tasting-notes-tags">
+              <span class="note-tag">Dark Cocoa</span>
+              <span class="note-tag">Caramel</span>
+              <span class="note-tag">Velvety Smooth</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-label">Harga</span>
+                <span class="price-value">Rp 38.000</span>
+              </div>
+              <button class="btn btn-whatsapp" data-open-order data-product="Amber Cold Brew Black 250ml">
+                <span>Pesan</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3: Flores Bajawa Honey -->
+        <article class="product-card" data-category="beans">
+          <div class="product-thumb-wrap">
+            <img src="assets/images/beans.jpg" alt="Flores Bajawa Yellow Honey Beans" class="product-thumb" loading="lazy">
+            <span class="product-badge">Single Origin</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Specialty Beans • 200g</span>
+            <h3 class="product-title">Flores Bajawa Honey</h3>
+            <p class="product-desc">Proses yellow honey dari lereng gunung Inerie, menawarkan kemanisan peach, floral melati, dan aftertaste cokelat susu.</p>
+            <div class="tasting-notes-tags">
+              <span class="note-tag">Yellow Peach</span>
+              <span class="note-tag">Jasmine</span>
+              <span class="note-tag">Milk Chocolate</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-label">Harga</span>
+                <span class="price-value">Rp 105.000</span>
+              </div>
+              <button class="btn btn-whatsapp" data-open-order data-product="Flores Bajawa Honey 200g">
+                <span>Pesan</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4: Signature House Blend -->
+        <article class="product-card" data-category="blends">
+          <div class="product-thumb-wrap">
+            <img src="assets/images/beans.jpg" alt="Homeground House Blend Midnight Roast" class="product-thumb" loading="lazy">
+            <span class="product-badge">House Blend</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">House Blend • 250g</span>
+            <h3 class="product-title">Midnight Hearth Blend</h3>
+            <p class="product-desc">Kombinasi 60% Kerinci Washed & 40% Toraja Sapan. Diciptakan khusus untuk penikmat kopi susu rumahan dan moka pot.</p>
+            <div class="tasting-notes-tags">
+              <span class="note-tag">Toasted Almond</span>
+              <span class="note-tag">Brown Sugar</span>
+              <span class="note-tag">Dark Cacao</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-label">Harga</span>
+                <span class="price-value">Rp 98.000</span>
+              </div>
+              <button class="btn btn-whatsapp" data-open-order data-product="Midnight Hearth Blend 250g">
+                <span>Pesan</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5: White Cold Brew (Creamy Oat) -->
+        <article class="product-card" data-category="coldbrew">
+          <div class="product-thumb-wrap">
+            <img src="assets/images/cold-brew.jpg" alt="Homeground Creamy Oat Cold Brew 250ml" class="product-thumb" loading="lazy">
+            <span class="product-badge">Favorit</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Bottled Cold Brew • 250ml</span>
+            <h3 class="product-title">Creamy Oat White Brew</h3>
+            <p class="product-desc">Konsentrat cold brew artisan dipadukan dengan oat milk barista series dan sedikit sentuhan gula aren organik murni.</p>
+            <div class="tasting-notes-tags">
+              <span class="note-tag">Creamy Oat</span>
+              <span class="note-tag">Palm Sugar</span>
+              <span class="note-tag">Vanilla Bean</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-label">Harga</span>
+                <span class="price-value">Rp 42.000</span>
+              </div>
+              <button class="btn btn-whatsapp" data-open-order data-product="Creamy Oat White Brew 250ml">
+                <span>Pesan</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6: Kerinci Natural Anaerobic -->
+        <article class="product-card" data-category="beans">
+          <div class="product-thumb-wrap">
+            <img src="assets/images/beans.jpg" alt="Kerinci Natural Anaerobic Single Origin Beans" class="product-thumb" loading="lazy">
+            <span class="product-badge">Limited Batch</span>
+          </div>
+          <div class="product-body">
+            <span class="product-category">Specialty Beans • 200g</span>
+            <h3 class="product-title">Kerinci Honey Anaerobic</h3>
+            <p class="product-desc">Berasal dari kaki Gunung Kerinci pada ketinggian 1600 mdpl. Keasaman cerah buah beri dan aroma madu hutan tropis.</p>
+            <div class="tasting-notes-tags">
+              <span class="note-tag">Blackberry</span>
+              <span class="note-tag">Wild Honey</span>
+              <span class="note-tag">Earl Grey</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">
+                <span class="price-label">Harga</span>
+                <span class="price-value">Rp 120.000</span>
+              </div>
+              <button class="btn btn-whatsapp" data-open-order data-product="Kerinci Honey Anaerobic 200g">
+                <span>Pesan</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       Interactive Feature: Home Brew Calculator & Timer
+       ============================================== -->
+  <section class="calculator-section" id="kalkulator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fitur Interaktif Home Brewer</span>
+        <h2 class="heading-lg">Kalkulator Seduh & Timer Rumahan</h2>
+        <p class="section-subtitle">
+          Kunci seduhan nikmat adalah presisi rasio dan waktu. Pilih alat seduhmu, atur takaran bubuk kopi, dan ikuti panduan penuangan langkah-demi-langkah kami.
+        </p>
+      </div>
+
+      <div class="calc-card-container">
+        <!-- Left: Input Controls -->
+        <div class="calc-inputs">
+          <!-- Step 1: Brew Method Selection -->
+          <div>
+            <div class="input-block-label">
+              <span>1. Pilih Metode Seduh</span>
+            </div>
+            <div class="method-grid">
+              <button class="method-btn active" data-method="v60">
+                <svg viewBox="0 0 24 24"><path d="M2 19h18v2H2zM3 4l4 10h10l4-10H3zm13 8H8l-2.4-6h12.8L16 12z"/></svg>
+                <span>V60 Drip</span>
+              </button>
+              <button class="method-btn" data-method="frenchpress">
+                <svg viewBox="0 0 24 24"><path d="M7 2h10v2h-2v1.08C17.65 5.57 20 7.99 20 11v8c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3v-8c0-3.01 2.35-5.43 5-5.92V4H7V2zm6 5.05V17h-2V7.05c-2.31.42-4 2.45-4 4.95v7c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-7c0-2.5-1.69-4.53-4-4.95z"/></svg>
+                <span>French Press</span>
+              </button>
+              <button class="method-btn" data-method="aeropress">
+                <svg viewBox="0 0 24 24"><path d="M8 2h8v2H8V2zm1 4h6v6H9V6zm-2 8h10v6c0 1.1-.9 2-2 2H9c-1.1 0-2-.9-2-2v-6z"/></svg>
+                <span>AeroPress</span>
+              </button>
+              <button class="method-btn" data-method="japaneseiced">
+                <svg viewBox="0 0 24 24"><path d="M19 3H5v2h14V3zM6 6l2 13h8l2-13H6zm8.5 7h-5l-.5-3h6l-.5 3z"/></svg>
+                <span>Ice Japanese</span>
+              </button>
+              <button class="method-btn" data-method="coldbrew">
+                <svg viewBox="0 0 24 24"><path d="M12 2c-1.1 0-2 .9-2 2v2H7v14c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V6h-3V4c0-1.1-.9-2-2-2zm-1 6h2v12h-2V8z"/></svg>
+                <span>Cold Brew Jar</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Dose Slider -->
+          <div>
+            <div class="input-block-label">
+              <span>2. Takaran Kopi (Dose)</span>
+              <span class="slider-val-display" id="doseDisplay">15g</span>
+            </div>
+            <div class="range-slider-wrapper">
+              <input type="range" min="10" max="40" step="1" value="15" class="custom-range" id="doseSlider" aria-label="Slider Takaran Kopi">
+              <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem;">
+                <span>10g (1 Cangkir)</span>
+                <span>20g (Reguler)</span>
+                <span>40g (Carafe Berbagi)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Brew Ratio Selection -->
+          <div>
+            <div class="input-block-label">
+              <span>3. Karakter & Rasio Air</span>
+            </div>
+            <div class="ratio-selector">
+              <div class="ratio-chip" data-ratio="14">
+                1:14 (Bold / Kuat)
+              </div>
+              <div class="ratio-chip active" data-ratio="15">
+                1:15 (Seimbang)
+              </div>
+              <div class="ratio-chip" data-ratio="16">
+                1:16 (Ringan)
+              </div>
+              <div class="ratio-chip" data-ratio="17">
+                1:17 (Mellow)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Results & Brew Steps -->
+        <div class="calc-outputs">
+          <div>
+            <div class="calc-summary-grid">
+              <div class="summary-card">
+                <div class="summary-card-label">Air yang Dibutuhkan</div>
+                <div class="summary-card-value" id="calcTotalWater">225 ml</div>
+                <div class="summary-card-sub">Air mineral murni (TDS 80-120)</div>
+              </div>
+              <div class="summary-card">
+                <div class="summary-card-label">Suhu Air Ideal</div>
+                <div class="summary-card-value" id="calcTemp">92°C - 94°C</div>
+                <div class="summary-card-sub">Tunggu 45s setelah mendidih</div>
+              </div>
+              <div class="summary-card">
+                <div class="summary-card-label">Level Gilingan</div>
+                <div class="summary-card-value" style="font-size: 1.15rem;" id="calcGrind">Medium - Fine</div>
+                <div class="summary-card-sub">Mirip butiran garam meja</div>
+              </div>
+              <div class="summary-card">
+                <div class="summary-card-label">Target Waktu Seduh</div>
+                <div class="summary-card-value" id="calcTime">2:30 - 3:00 min</div>
+                <div class="summary-card-sub">Total waktu ekstraksi</div>
+              </div>
+            </div>
+
+            <!-- Steps List -->
+            <div class="steps-timeline">
+              <div class="steps-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Panduan Curahan (Pour Schedule)</span>
+              </div>
+              <div id="calcStepsList">
+                <!-- Dynamically populated by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Brew Timer -->
+          <div class="timer-widget">
+            <div>
+              <div style="font-size: 0.76rem; text-transform: uppercase; color: var(--text-dim); margin-bottom: 2px;">Brewing Stopwatch</div>
+              <div class="timer-display" id="timerDisplay">00:00</div>
+            </div>
+            <div class="timer-controls">
+              <button class="timer-btn btn-play" id="timerPlayBtn">Mulai</button>
+              <button class="timer-btn" id="timerResetBtn">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       Philosophy & Process Section
+       ============================================== -->
+  <section class="process-section" id="proses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Filosofi & Alur Kerja</span>
+        <h2 class="heading-lg">Perjalanan Tiap Butir Kopi Kami</h2>
+        <p class="section-subtitle">
+          Bagaimana dedikasi dan standar ketat diterapkan mulai dari pemilihan green beans hingga tiba di cangkirmu.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <!-- Step 1 -->
+        <div class="process-card">
+          <span class="process-num">01</span>
+          <div class="process-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <h3 class="process-title">Kurasi Green Beans</h3>
+          <p class="process-desc">
+            Bekerja sama erat dengan prosesor dan petani binaan di dataran tinggi Indonesia dengan standar cupping score &gt; 83 poin.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-card">
+          <span class="process-num">02</span>
+          <div class="process-icon">
+            <svg viewBox="0 0 24 24"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67z"/></svg>
+          </div>
+          <h3 class="process-title">Profil Sangrai Khusus</h3>
+          <p class="process-desc">
+            Setiap asal biji memiliki kurva suhu sangrai unik untuk menonjolkan keasaman buah alami dan kemanisan karamel yang bersih.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-card">
+          <span class="process-num">03</span>
+          <div class="process-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H6v-2h6v2zm6 0h-4v-2h4v2zm0-4H6v-2h12v2z"/></svg>
+          </div>
+          <h3 class="process-title">Cupping & Kalibrasi</h3>
+          <p class="process-desc">
+            Uji organoleptik dan refraktometer TDS dilakukan pada tiap batch sangrai untuk memastikan tidak ada cacat rasa (defect).
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-card">
+          <span class="process-num">04</span>
+          <div class="process-icon">
+            <svg viewBox="0 0 24 24"><path d="M18 6h-2c0-2.21-1.79-4-4-4S8 3.79 8 6H6c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-6-2c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm6 16H6V8h2v2c0 .55.45 1 1 1s1-.45 1-1V8h4v2c0 .55.45 1 1 1s1-.45 1-1V8h2v12z"/></svg>
+          </div>
+          <h3 class="process-title">Kemasan Degassing</h3>
+          <p class="process-desc">
+            Dikemas rapat dengan kantong craft barrier foil berventilasi one-way valve untuk pelepasan gas CO2 tanpa oksidasi udara luar.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       Customer Reviews Section
+       ============================================== -->
+  <section class="reviews-section" id="testimoni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kata Mereka</span>
+        <h2 class="heading-lg">Ulasan Pecinta Kopi Rumahan</h2>
+        <p class="section-subtitle">
+          Cerita nyata dari mereka yang telah menikmati seduhan dan biji kopi Homeground di meja mereka.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="stars">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-text">
+              "Gayo Wine Anaerobic-nya beneran luar biasa! Begitu diseduh pake V60, aroma strawberry fermentasi langsung semerbak satu ruangan. Sangraiannya pas banget, gak ada rasa gosong sama sekali."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">RA</div>
+            <div>
+              <div class="reviewer-name">Rian Aditya</div>
+              <div class="reviewer-tag">Home Barista • Jakarta Selatan</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="stars">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-text">
+              "Amber Cold Brew botolan jadi penyelamat stok kerja WFH gw. Disimpan di kulkas tahan seminggu lebih, rasanya tetep bold tapi mulus banget di lambung. Packaging botol kaca apotekernya juga estetik parah."
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">DS</div>
+            <div>
+              <div class="reviewer-name">Dina Savitri</div>
+              <div class="reviewer-tag">Product Designer • BSD City</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="stars">
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+            <p class="review-text">
+              "Kalkulator seduh di website-nya ngebantu banget waktu pertama kali belajar bikin Japanese Iced Pour Over. Tinggal ikuti gramatur air & es-nya, hasilnya langsung seimbang dan seger banget!"
+            </p>
+          </div>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">BM</div>
+            <div>
+              <div class="reviewer-name">Bagus Mahendra</div>
+              <div class="reviewer-tag">Coffee Enthusiast • Bandung</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       FAQ Accordion Section
+       ============================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pertanyaan Umum</span>
+        <h2 class="heading-lg">Tanya Jawab Seputar Homeground</h2>
+        <p class="section-subtitle">
+          Informasi mengenai pengiriman, masa simpan biji kopi, tingkat gilingan, dan cara pemesanan.
+        </p>
+      </div>
+
+      <div class="faq-list">
+        <!-- FAQ 1 -->
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Berapa lama masa simpan terbaik (best before) biji kopi Homeground?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+          </button>
+          <div class="faq-answer">
+            Biji kopi kami paling optimal dinikmati pada hari ke-7 hingga ke-35 setelah tanggal sangrai (roast date). Dalam periode ini, fase degassing selesai dan potensi rasa floral, buah, serta aroma karamel berada pada puncak kejernihannya. Simpan selalu di tempat sejuk kedap udara dan hindari sinar matahari langsung.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Apakah saya bisa meminta biji kopi digilingkan sesuai alat seduh saya?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+          </button>
+          <div class="faq-answer">
+            Tentu bisa! Saat memesan lewat formulir atau WhatsApp, kamu bisa memilih opsi: Biji Utuh (Whole Beans), Giling Kasar (Cold Brew & French Press), Giling Sedang (V60 & Aeropress), atau Giling Halus (Moka Pot & Espresso Rumahan). Kami menggiling menggunakan burr grinder kalibrasi tepat sebelum dikirim.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Berapa daya tahan Bottled Cold Brew di dalam kulkas?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+          </button>
+          <div class="faq-answer">
+            Untuk Amber Cold Brew Black (tanpa susu), dapat bertahan hingga 14 hari di dalam kulkas chiller tertutup rapat. Untuk varian Creamy Oat White Brew, disarankan dihabiskan dalam waktu 4–6 hari demi menjaga kesegaran rasa oat milk.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Bagaimana jangkauan pengiriman dan metode kurir?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+          </button>
+          <div class="faq-answer">
+            Untuk produk Bottled Cold Brew, pengiriman menggunakan kurir Instant / Same Day area Jabodetabek. Untuk Specialty Beans dan drip bag, kami melayani pengiriman ke seluruh Indonesia via ekspedisi reguler dengan bubble wrap tebal dan kardus protektif.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Apakah Homeground menerima pemesanan hampers atau custom batch?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+          </button>
+          <div class="faq-answer">
+            Ya! Kami sering menyiapkan paket souvenir, hampers hari raya, dan seduhan khusus untuk private event atau kebutuhan kantor. Hubungi kami melalui WhatsApp untuk konsultasi profil rasa dan kustomisasi kemasan.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       Call to Action Banner
+       ============================================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box">
+        <span class="section-tag">Mulai Menyeduh Hari Ini</span>
+        <h2>Rasakan Bedanya Kopi yang Disangrai & Diseduh dengan Hati.</h2>
+        <p>
+          Ingin konsultasi profil rasa atau tanya rekomendasi beans yang paling cocok dengan seleramu? Tim brewer kami siap berbincang langsung.
+        </p>
+        <button class="btn btn-whatsapp" data-open-order id="ctaOrderBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.12c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.62-.92-3.19-1.32-5.23-4.57-5.39-4.78-.16-.21-1.28-1.7-1.28-3.25s.8-2.31 1.09-2.63c.28-.32.61-.4.81-.4.2 0 .4.01.58.02.19.01.44-.07.69.53.25.6.85 2.08.93 2.23.08.16.14.34.03.55-.11.21-.17.34-.33.53-.16.19-.34.42-.48.56-.16.16-.33.34-.14.66.19.32.84 1.38 1.8 2.23 1.23 1.1 2.27 1.44 2.59 1.6.32.16.51.13.7-.08.19-.21.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.38.08.13.08.77-.16 1.45z"/></svg>
+          <span>Pesan / Konsultasi via WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================
+       Footer
+       ============================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-badge">
+              <svg viewBox="0 0 24 24"><path d="M2 19h18v2H2zM20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 5h-2V5h2v3z"/></svg>
+            </div>
+            <span>Homeground<span class="text-accent">.</span></span>
+          </a>
+          <p>
+            Home micro-roastery & manual brew lab independen yang berdedikasi mengangkat keunikan rasa biji kopi spesialti nusantara.
+          </p>
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Homeground Coffee">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok Homeground Coffee">
+              <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.4a6.33 6.33 0 0 0-.86-.06A6.34 6.34 0 0 0 3 15.68a6.34 6.34 0 0 0 10.82 4.48 6.27 6.27 0 0 0 1.86-4.48V8.71a8.18 8.18 0 0 0 4.91 1.63v-3.45a4.85 4.85 0 0 1-1-.2z"/></svg>
+            </a>
+            <a href="https://wa.me/6281289001234" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp Homeground Coffee">
+              <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.12c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.62-.92-3.19-1.32-5.23-4.57-5.39-4.78-.16-.21-1.28-1.7-1.28-3.25s.8-2.31 1.09-2.63c.28-.32.61-.4.81-.4.2 0 .4.01.58.02.19.01.44-.07.69.53.25.6.85 2.08.93 2.23.08.16.14.34.03.55-.11.21-.17.34-.33.53-.16.19-.34.42-.48.56-.16.16-.33.34-.14.66.19.32.84 1.38 1.8 2.23 1.23 1.1 2.27 1.44 2.59 1.6.32.16.51.13.7-.08.19-.21.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.38.08.13.08.77-.16 1.45z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigasi</h4>
+          <ul class="footer-links">
+            <li><a href="#tentang">Cerita Kami</a></li>
+            <li><a href="#menu">Koleksi Beans</a></li>
+            <li><a href="#kalkulator">Kalkulator Seduh</a></li>
+            <li><a href="#proses">Filosofi Sangrai</a></li>
+            <li><a href="#faq">Pertanyaan Umum</a></li>
+          </ul>
+        </div>
+
+        <!-- Operating Hours -->
+        <div class="footer-col">
+          <h4>Jadwal Seduh</h4>
+          <ul class="footer-schedule" style="list-style: none;">
+            <li><span>Senin - Jumat</span> <span>08.00 - 17.00</span></li>
+            <li><span>Sabtu</span> <span>09.00 - 18.00</span></li>
+            <li><span>Minggu / Libur</span> <span>Khusus PO</span></li>
+            <li style="margin-top: 0.75rem; color: var(--accent);">Roasting Day: Setiap Selasa & Jumat</li>
+          </ul>
+        </div>
+
+        <!-- Studio Location -->
+        <div class="footer-col">
+          <h4>Studio Seduh</h4>
+          <p style="line-height: 1.6; color: var(--text-dim); margin-bottom: 0.75rem;">
+            Home Studio Cilandak Barat,<br>
+            Jakarta Selatan 12430<br>
+            DKI Jakarta, Indonesia
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            WhatsApp: +62 812-8900-1234<br>
+            Email: brew@homegroundcoffee.id
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Homeground Coffee. All Rights Reserved. Crafted with passion from home.</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" style="color: var(--text-dim);">Privacy Policy</a>
+          <a href="#" style="color: var(--text-dim);">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================
+       Floating WhatsApp Order Button
+       ============================================== -->
+  <button class="floating-order-btn" data-open-order id="floatingOrderBtn" aria-label="Buka Formulir Pesan WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.12c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.62-.92-3.19-1.32-5.23-4.57-5.39-4.78-.16-.21-1.28-1.7-1.28-3.25s.8-2.31 1.09-2.63c.28-.32.61-.4.81-.4.2 0 .4.01.58.02.19.01.44-.07.69.53.25.6.85 2.08.93 2.23.08.16.14.34.03.55-.11.21-.17.34-.33.53-.16.19-.34.42-.48.56-.16.16-.33.34-.14.66.19.32.84 1.38 1.8 2.23 1.23 1.1 2.27 1.44 2.59 1.6.32.16.51.13.7-.08.19-.21.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.38.08.13.08.77-.16 1.45z"/></svg>
+    <span>Pesan Kopi</span>
+  </button>
+
+  <!-- ==============================================
+       WhatsApp Order Builder Modal
+       ============================================== -->
+  <div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalTitle">Formulir Pesanan Homeground</h3>
+        <button class="modal-close-btn" id="orderModalClose" aria-label="Tutup Formulir">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+
+      <form class="modal-body" id="orderForm">
+        <div class="form-group">
+          <label class="form-label" for="orderName">Nama Pemesan</label>
+          <input type="text" class="form-input" id="orderName" placeholder="Contoh: Dimas Prakoso" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderItem">Pilihan Produk / Beans</label>
+          <select class="form-select" id="orderItem" required>
+            <option value="Gayo Wine Anaerobic 200g">Gayo Wine Anaerobic (Beans 200g) - Rp 115.000</option>
+            <option value="Amber Cold Brew Black 250ml">Amber Cold Brew Black (250ml) - Rp 38.000</option>
+            <option value="Flores Bajawa Honey 200g">Flores Bajawa Honey (Beans 200g) - Rp 105.000</option>
+            <option value="Midnight Hearth Blend 250g">Midnight Hearth House Blend (250g) - Rp 98.000</option>
+            <option value="Creamy Oat White Brew 250ml">Creamy Oat White Cold Brew (250ml) - Rp 42.000</option>
+            <option value="Kerinci Honey Anaerobic 200g">Kerinci Honey Anaerobic (Beans 200g) - Rp 120.000</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderGrind">Tingkat Gilingan (Grind Size)</label>
+          <select class="form-select" id="orderGrind" required>
+            <option value="Biji Utuh (Whole Beans)">Biji Utuh (Whole Beans - Paling Segar)</option>
+            <option value="Giling Kasar (Cold Brew / French Press)">Giling Kasar (Cold Brew & French Press)</option>
+            <option value="Giling Sedang (V60 / Aeropress / Drip)">Giling Sedang (V60, Kalita, Aeropress)</option>
+            <option value="Giling Halus (Moka Pot / Espresso Rumahan)">Giling Halus (Moka Pot & Espresso Rumahan)</option>
+            <option value="Khusus Cold Brew Botolan (Siap Minum)">Khusus Cold Brew Botolan (Siap Minum)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderQty">Jumlah (Pack / Botol)</label>
+          <input type="number" class="form-input" id="orderQty" min="1" max="20" value="1" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="orderNotes">Catatan Tambahan & Alamat Pengiriman</label>
+          <textarea class="form-textarea" id="orderNotes" placeholder="Tuliskan alamat pengiriman atau catatan khusus (misal: minta disangrai tgl terbaru)"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-whatsapp" style="width: 100%; margin-top: 0.5rem;" id="submitOrderBtn">
+          <svg class="btn-icon" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.79 14.12c-.24.68-1.39 1.3-1.92 1.38-.49.08-1.12.11-3.62-.92-3.19-1.32-5.23-4.57-5.39-4.78-.16-.21-1.28-1.7-1.28-3.25s.8-2.31 1.09-2.63c.28-.32.61-.4.81-.4.2 0 .4.01.58.02.19.01.44-.07.69.53.25.6.85 2.08.93 2.23.08.16.14.34.03.55-.11.21-.17.34-.33.53-.16.19-.34.42-.48.56-.16.16-.33.34-.14.66.19.32.84 1.38 1.8 2.23 1.23 1.1 2.27 1.44 2.59 1.6.32.16.51.13.7-.08.19-.21.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.38.08.13.08.77-.16 1.45z"/></svg>
+          <span>Lanjutkan ke WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
